@@ -1,6 +1,17 @@
-import { getTrainings } from '@/lib/training';
+import { redirect } from "next/navigation";
+
+import { verifyAuth } from "@/lib/auth";
+import { getTrainings } from "@/lib/training";
 
 export default async function TrainingPage() {
+  // Protecting the page or resources.
+  const result = await verifyAuth();
+
+  if (!result.user) {
+    // Mean the request is made by unAuthenticated user.
+    return redirect("/");
+  }
+
   const trainingSessions = getTrainings();
 
   return (
