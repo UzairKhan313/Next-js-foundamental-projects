@@ -1,5 +1,6 @@
 "use server";
 
+import { createAuthSession } from "@/lib/auth";
 import { hashUserPassword } from "@/lib/hash";
 import { createUser } from "@/lib/user";
 import { redirect } from "next/navigation";
@@ -26,7 +27,9 @@ export async function signup(prevState, formData) {
 
   try {
     //creating User
-    createUser(email, hashedPassword);
+    const userId = createUser(email, hashedPassword);
+    await createAuthSession(userId);
+    redirect("/training");
   } catch (error) {
     // If email is already registered in data base.
     if (error.code === "SQLITE_CONSTRAINT_UNIQUE") {
@@ -39,5 +42,4 @@ export async function signup(prevState, formData) {
     }
     throw error;
   }
-  redirect("/training");
 }
