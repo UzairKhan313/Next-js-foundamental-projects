@@ -8,13 +8,18 @@
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/training/page": [
+    "/(auth)/training/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/training/page.js"
+      "static/chunks/app/(auth)/training/page.js"
+    ],
+    "/(auth)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/layout.css",
+      "static/chunks/app/(auth)/layout.js"
     ]
   }
 }

@@ -78,3 +78,19 @@ export async function verifyAuth() {
   // };
   return result;
 }
+
+export async function destroySession() {
+  const { session } = await verifyAuth();
+
+  if (!session) {
+    return {
+      error: "unathurized",
+    };
+  }
+  await lucia.invalidateSession(session.id);
+
+  // creating empty session.
+  const sessionCokie = lucia.createBlankSessionCookie();
+  //   Craeting and setting the session with empty data.
+  cookies().set(sessionCokie.name, sessionCokie.value, sessionCokie.attributes);
+}

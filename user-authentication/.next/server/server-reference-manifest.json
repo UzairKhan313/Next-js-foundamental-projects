@@ -1,14 +1,46 @@
 {
   "node": {
-    "de3bbba5d658b35b38f92b169bda47671b4d852e": {
+    "0ec352e5424f70efccae2a6e62a345ba3b3dbdbe": {
       "workers": {
-        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22signup%22%5D%5D%5D&__client_imported__=true!"
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!",
+        "app/(auth)/training/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/page": "action-browser"
+        "app/page": "action-browser",
+        "app/(auth)/training/page": "rsc"
+      }
+    },
+    "40e3b7b33ebf9d1154221884de21ae11111bda36": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!",
+        "app/(auth)/training/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/(auth)/training/page": "rsc"
+      }
+    },
+    "cdec127713366feb801fd4c18e00afd8bd1175c6": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!",
+        "app/(auth)/training/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/(auth)/training/page": "rsc"
+      }
+    },
+    "de3bbba5d658b35b38f92b169bda47671b4d852e": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=true!",
+        "app/(auth)/training/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CCODING%5C%5CNext%20js%5C%5CNext-js-foundamental-projects%5C%5Cuser-authentication%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22auth%22%2C%22logout%22%2C%22login%22%2C%22signup%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/(auth)/training/page": "rsc"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "8/WQ/qm/hc1AXSAbXK0iBoh/siRz09YeLKQBg6VS6ao="
+  "encryptionKey": "Q8Bk50tkBsuoX9TUN6uNA5z9hox/qf/xrCsdOXRh8+w="
 }
