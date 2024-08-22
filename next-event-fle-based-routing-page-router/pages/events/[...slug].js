@@ -7,6 +7,7 @@ import EventList from "../../components/events/event-list";
 import ResultTitle from "../../components/events/results-title";
 import Button from "../../components/ui/Button";
 import ErrorAlert from "../../components/ui/error-alert";
+import Head from "next/head";
 
 export default function FilteredEventPage({ haseError, events, date }) {
   const router = useRouter();
@@ -48,6 +49,13 @@ export default function FilteredEventPage({ haseError, events, date }) {
   if (!fileteredEvents || fileteredEvents.length === 0) {
     return (
       <Fragment>
+        <Head>
+          <title>No filter Events!</title>
+          <meta
+            name="description"
+            content={`No Event found for the choosen filter!`}
+          />
+        </Head>
         <ErrorAlert>
           <p>No Event found for the choosen filter!</p>
         </ErrorAlert>
@@ -61,6 +69,13 @@ export default function FilteredEventPage({ haseError, events, date }) {
   const data = new Date(date.year, date.month - 1);
   return (
     <Fragment>
+      <Head>
+        <title>Filtered Events</title>
+        <meta
+          name="description"
+          content={`All Events for ${date.month - 1}/${date.month}`}
+        />
+      </Head>
       <ResultTitle date={data} />
       <EventList items={fileteredEvents} />
     </Fragment>

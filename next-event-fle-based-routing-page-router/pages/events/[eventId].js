@@ -8,6 +8,7 @@ import EventLogistics from "../../components/event-detail/event-logistics";
 import { getEventById, getFeaturedEvents } from "../../utils/api-utils";
 import Button from "../../components/ui/Button";
 import ErrorAlert from "../../components/ui/error-alert";
+import Head from "next/head";
 
 export default function EventDetailsPage({ event }) {
   // const router = useRouter();
@@ -40,6 +41,10 @@ export default function EventDetailsPage({ event }) {
 
   return (
     <Fragment>
+      <Head>
+        <title>{event.title}</title>
+        <meta name="description" content={event.description} />
+      </Head>
       <EventSummery title={event.title} />
       <EventLogistics
         date={event.date}
