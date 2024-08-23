@@ -1,13 +1,14 @@
 import { Fragment } from "react";
 // import { useRouter } from "next/router";
+import Comments from "../../components/input/comments";
 
 import EventSummery from "../../components/event-detail/event-summary";
 import EventContent from "../../components/event-detail/event-content";
 import EventLogistics from "../../components/event-detail/event-logistics";
 
 import { getEventById, getFeaturedEvents } from "../../utils/api-utils";
-import Button from "../../components/ui/Button";
-import ErrorAlert from "../../components/ui/error-alert";
+// import Button from "../../components/ui/Button";
+// import ErrorAlert from "../../components/ui/error-alert";
 import Head from "next/head";
 
 export default function EventDetailsPage({ event }) {
@@ -55,6 +56,7 @@ export default function EventDetailsPage({ event }) {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
+      <Comments eventId={event.id} />
     </Fragment>
   );
 }
